@@ -1,0 +1,14 @@
+ul {
+  background-color: green;
+}
+$a: 10;
+@while ($a<20) {
+  ul {
+    padding: $a;
+  }
+  $a: $a + 1;
+}
+
+.whie {
+  background-color: red;
+}

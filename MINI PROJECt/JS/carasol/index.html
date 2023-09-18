@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="slide">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+            <div class="slide">4</div>
+
+        </main>
+        <button onclick="prev()">prev</button>
+        <button onclick="next()">next</button>
+        <div class="Sp-slide" onclick="goSlide(0)"></div>
+        <div class="Sp-slide" onclick="goSlide(1)"></div>
+        <div class="Sp-slide" onclick="goSlide(2)"></div>
+        <div class="Sp-slide" onclick="goSlide(3)"></div>
+    </div>
+    <script>
+        let counter = 0;
+        const slide = document.querySelectorAll(".slide");
+        slide.forEach((ele, index) => {
+            ele.style.left = `${index * 100}%`;
+        });
+        const slideImages = () => {
+            slide.forEach((ele, index) => {
+                ele.style.transform = `translateX(-${counter * 100}%)`;
+            });
+        };
+        const next = () => {
+            counter++;
+            slideImages(counter);
+            console.log(counter);
+        };
+        const prev = () => {
+            counter--;
+            slideImages(counter);
+            console.log(counter);
+        };
+        const goSlide = (slideIndex) => {
+            counter = slideIndex;
+            slideImages(slideIndex);
+            console.log(counter);
+        };
+    </script>
+</body>
+
+</html>

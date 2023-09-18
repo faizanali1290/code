@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Welcome to Pappa's Pizzeria, a beloved family-owned restaurant that brings together the perfect blend of tradition and flavor. Step inside and be greeted by the mouthwatering aroma of freshly baked pizzas. Our skilled pizzaiolos handcraft each pizza with flove, using the finest ingredients and toppings that burst with flavor. From classic Margherita to creative specialty combinations, our menu offers something for everyone. With a warm and inviting atmosphere, friendly staff, and a commitment to exceptional service, Pappa's Pizzeria is the perfect place to gather and savor the taste of authentic Italian cuisine." />
+  <meta name="author" content="faizan ali">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- fav icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assest/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assest/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assest/con/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./assest/icon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./assest/icon/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./loader.css">
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+  <title>Pappa's Pizzeria</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("./assest/font/Inter-VariableFont_slnt\,wght.ttf");
+  }
+
+  html {
+    font-size: 65.5%;
+  }
+
+  @media screen and (max-width:1024px) {
+    html {
+      font-size: 55.5%;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+    html {
+      font-size: 45.5%;
+    }
+  }
+
+
+
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader {
+    animation: rotate 3s linear infinite
+  }
+
+  .loader {
+    display: none;
+  }
+</style>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div id="root">
+  </div>
+
+
+  <script>
+
+
+    // if ('serviceWorker' in navigator) {
+    //   navigator.serviceWorker.register('./service-worker.js')
+    //     .then(function (registration) {
+    //       console.log('Service Worker registered with scope:', registration.scope);
+    //     })
+    //     .catch(function (error) {
+    //       console.log('Service Worker registration failed:', error);
+    //     });
+    // }
+
+
+
+
+  </script>
+
+</body>
+
+</html>

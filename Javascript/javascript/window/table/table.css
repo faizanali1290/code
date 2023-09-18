@@ -1,0 +1,14 @@
+table,th,td{
+
+   
+    border: 3px solid rgb(95, 95, 91);
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 2rem;
+}
+table{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    text-transform: capitalize;
+}

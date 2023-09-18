@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: gray;
+        }
+
+        #rotatingElement {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: transform 0.3s ease;
+            /* Add transition for smooth rotation */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, omnis non mollitia aliquid, nesciunt
+        impedit perferendis nisi exercitationem sit amet, officia aut veniam perspiciatis aperiam maxime illo molestiae
+        voluptatem? Non.</h1>
+    <div id="rotatingElement">dasoihioash</div>
+
+    <script>
+
+        
+
+        const latitude = 37.7749;  // Example latitude
+        const longitude = -122.4194;  // Example longitude
+        const apiKey = "AIzaSyBpS5oKmdOrm_zhQp1KFwOm8rB2UXwKAEw";  // Replace with your API key
+
+        // Construct the request URL
+        const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
+
+        // Send the request
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
+            .catch(error => {
+                console.log("An error occurred:", error);
+            });
+
+    </script>
+
+</body>
+
+</html>

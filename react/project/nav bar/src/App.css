@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+nav {
+  height: 8rem;
+  line-height: 8rem;
+  background-color: black;
+  color: rgb(245, 243, 243);
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  position: relative;
+}
+
+ul {
+
+  width: 40%;
+  display: flex ;
+  font-size: 2rem;
+  justify-content: space-evenly;
+
+
+}
+
+.authenicaltion button {
+  font-size: 2rem;
+  padding: .5rem;
+  border-radius: .6rem;
+  outline: none;
+  border: none;
+  margin: 0 .3rem;
+}
+
+.haumbargar {
+  display: none;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+section {
+  display: grid;
+  place-content: center;
+  height: 80vh;
+}
+
+
+
+
+.haumbargar div {
+  z-index: 33;
+  width: 4rem;
+  margin: .3rem 0;
+  height: .7rem;
+  background-color: rgba(248, 238, 238, 0.979);
+}
+
+
+
+@media screen and (max-width:555px) {
+  nav {
+
+    justify-content: flex-start;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .authenicaltion button {
+    margin-left: 1rem;
+  }
+
+  .log {
+    display: block;
+    margin-left: 10%;
+  }
+
+  .haumbargar {
+    line-height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: flex-end;
+
+    position: absolute;
+    right: 10%;
+    top: 2rem;
+  }
+
+  .haumbargar div {
+    z-index: 33;
+    width: 4rem;
+    margin: .3rem 0;
+    height: .7rem;
+    background-color: rgba(248, 238, 238, 0.979);
+  }
+
+  ul {
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    width: 100%;
+    top: 8rem;
+  }
+
+  ul li {
+    padding-left: 2rem;
+  }
+
+  .authenicaltion {
+    text-align: center;
+
+    width: 100%;
+    position: absolute;
+    top: 39rem;
+    background-color: rgb(17, 17, 17);
+    padding-bottom: 3rem;
+    display: none;
+  }
+
+
+
+
+}
+
+
+li:hover {
+  background-color: gray;
+  transition: all 1s;
+}
+
+
+
+
+.block {
+  display: block;
+}
+
+
+
+
+
+html {
+
+  font-size: 65.5%;
+
+}
+
+@media only screen and (max-width:992px) {
+  html {
+
+
+    font-size: 55.5%;
+
+  }
+
+
+}
+
+@media only screen and (max-width:768px) {
+  html {
+
+    font-size: 45%;
+  }
+
+
+
+}

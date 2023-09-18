@@ -1,0 +1,15 @@
+nav {
+  @if 2==2 {
+    background-color: red;
+  } @else {
+    background-color: yellow;
+  }
+}
+
+nav {
+  @if false {
+    background-color: red;
+  } @else {
+    background-color: yellow;
+  }
+}

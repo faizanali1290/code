@@ -1,0 +1,41 @@
+$selector: selector-nest("ul", "li");
+
+#{$selector} {
+  //this is interpolation
+  background-color: red;
+}
+
+// slector append
+// it combine the parameter
+$append: selector-append(".ab", "cd");
+
+#{$append} {
+  background-color: yellow;
+}
+
+$mulltiple_selector: selector-append(".ab", "cd,ef");
+#{$mulltiple_selector} {
+  background-color: gray;
+}
+a .abc {
+  text-decoration: none;
+  background-color: red;
+}
+.abc .info {
+  background-color: red;
+  line-height: 100px;
+}
+
+// slector replace
+
+// $replace:seletor-replace('string','replcae_value','new_value')
+
+//is-supperselector("a","a.active") here a is super selctor and the second argument is the sub slector
+//is check the super selector is exist inside sub selector it return boolean
+
+// $supper_selector: is-supperselector("a", ".active");
+
+// #{$supper_selector}{
+//   width: 10px;
+// }
+

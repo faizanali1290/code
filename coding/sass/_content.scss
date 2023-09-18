@@ -1,0 +1,46 @@
+// frist usage
+@mixin addProperty {
+  block-size: red;
+  @content;
+}
+
+.content {
+  @include addProperty {
+    background-color: gray;
+  }
+}
+
+// second usage
+@mixin addSelector {
+  @content;
+}
+
+@include addSelector {
+  .nav {
+    background-color: red;
+  }
+}
+
+// third usage
+
+@mixin MediaScreen($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@include MediaScreen(300px) {
+  body {
+    background-color: red;
+  }
+}
+@include MediaScreen(800px) {
+  body {
+    background-color: rgb(60, 255, 0);
+  }
+}
+@include MediaScreen(1500px) {
+  body {
+    background-color: rgb(60, 255, 0);
+  }
+}

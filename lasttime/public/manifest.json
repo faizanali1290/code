@@ -1,0 +1,24 @@
+{
+  "name": "Pappa's Pizzeria",
+  "short_name": "PP",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./assest/icon/apple-touch-icon.png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "./assest/icon/favicon-32x32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "./assest/icon/favicon-16x16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "./assest/icon/android-chrome-512x512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

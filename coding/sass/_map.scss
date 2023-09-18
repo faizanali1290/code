@@ -1,0 +1,21 @@
+$map: (
+  "bold": 500,
+  "bolder": 800,
+);
+$map1: (
+  "bold1": 500,
+  "bolder2": 800,
+  "bolder3": 100,
+);
+$mr: map-merge($map, $map1);
+$rm: map-remove($map1, "bold1");
+
+.map {
+  font-weight: map-get($map, "bold");
+  padding: map-has-key($map, "bold");
+  margin: map-values($map);
+  padding: map-values($rm);
+  $mr: map-merge($map, $map1);
+  max-width: map-values($mr);
+  //   padding-left: map-emerge($map , $map1 )
+}

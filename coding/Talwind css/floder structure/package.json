@@ -1,0 +1,22 @@
+{
+  "name": "floder-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch",
+    "watch": "tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}

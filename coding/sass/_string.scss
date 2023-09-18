@@ -1,0 +1,32 @@
+// string
+
+.string{
+    font-family:quote(assadwsauicjkb)
+  }
+  // like not opeator
+  .string{
+    font-family:unquote('asas')
+  }
+  .string{
+    font-family:to-lower-case('ABCDEF')
+  }
+  .string{
+    font-family:to-upper-case('abasaaA')
+  }
+  .string{
+    font-family:str-index("abcdef", "b")
+  
+  }
+  .string{
+    font-family:str-length("abcdef b")
+  
+  }
+  .string{
+    font-family:str-insert('ass', 'fa' , -1 )
+  
+  }
+  .string{
+    font-family:str-slice( "asiohc asic hsi", 0, 2)
+  
+  }
+  

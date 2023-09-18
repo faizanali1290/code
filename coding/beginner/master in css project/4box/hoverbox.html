@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+    <style>body{
+        display: grid;
+        height: 100vh;
+        place-items: center;
+    }
+    :root{
+        --tra:1s linear;
+        
+    }
+    .box{
+        border: 4px solid black;
+       padding: 0px 50px;
+    position: relative;
+    overflow: hidden;
+    }
+    .box::before{
+        content: "";
+        background-color: rgb(33, 28, 28);
+        width: 191px;
+        height: 67px;
+        position:absolute;
+        left: 0%;
+        top: 0;
+        transform:translateX(-100%) ;
+     
+     /* display: none; */
+        z-index: -1;
+        transition: 1s;
+        transition: var(--tra);
+    }
+    .box:hover::before{
+        display:block;  
+        transform:translateX(0);
+    
+        
+    }
+    .box:hover{
+        transition: var(--tra);
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>FAIZAN</h2>
+    </div>
+</body>
+</html>

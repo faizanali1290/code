@@ -1,0 +1,40 @@
+
+.card{
+/* display: flex; */
+
+  width: 20%;
+}
+body{
+
+  background-color: rgba(166, 173, 104, 0.664);
+}
+img{
+  width: 300px !important;
+  height: 300px;
+}
+.cards{
+display: flex;
+gap: 50px;
+justify-content: center;
+margin-top: 30px;
+flex-wrap: wrap;}
+h1{
+  margin: auto;
+  text-align: center;
+  margin: 18px 0;
+}
+ .button {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: red;
+  /* justify-content: center; */
+ 
+}
+button{
+
+  width: 100px;
+  height: 50px;
+
+}

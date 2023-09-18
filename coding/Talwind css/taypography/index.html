@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<style>
+    .faizan {
+        height: 400px;
+        /* background: linear-gradient(90turn, red,  yellow) */
+
+        /* background:linear-gradient(to right,red 60% ,yellow,purple) */
+
+    }
+
+    .shrin {
+        flex-grow: 2;
+    }
+
+    .flex-shrin {
+        flex-shrink: 2;
+    }
+
+    .two {
+        
+/* grid-row: 3/4;
+grid-column: 3/4; */
+
+/* grid-area: 3/2/4/3; */
+grid-area: 1/1/4/4 !important;
+/* position: fixed; */
+
+        background-color: aqua !important;
+    }
+    .one{
+        background-color: red;
+        z-index: 2133;
+    }
+
+    p {
+        height: 200px;
+    }
+</style>
+
+<body>
+
+    <div class="grid grid-cols-3">
+        <p class="bg-gray-500 one fixed" >this is one coloumn</p>
+        <p class="bg-yellow-500 two">this is second coloumn</p>
+        <p class="bg-purple-500">this is third coloumn</p>
+        <p>this is four coloumn</p>
+        <p class="bg-red-500">this is five coloumn</p>
+        <p class="bg-yellow-500">this is six coloumn</p>
+        <p class="bg-red-500">this is eight coloumn</p>
+        <p class="bg-yellow-500">this is nine coloumn</p>
+        <p class="bg-purple-500 last"> this is ten coloumn</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="flex">
+        <div class="bg-red-500 shrin order-4">home</div>
+        <div class="bg-purple-500 w-60 order-3">about</div>
+        <div class="bg-pink-500 w-60 flex-shrin order-2">shrink</div>
+        <div class="bg-yellow-500 order-1">grow</div>
+    </div>
+
+
+    <!-- <hr class="bg-red-500">
+
+
+<div class="flex flex-wrap-reverse ">
+    <div class="bg-red-500 min-w-[10rem]  flex-none">home</div>
+    <div class="bg-purple-600 flex-initial w-60 ">about</div>
+    <div class="bg-gray-700 ">contact us</div>
+</div> -->
+
+
+
+
+    <!-- <p class="bg-gradient-to-r to-purple-600 from-slate-600   via-yellow-300 gra">Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Quaerat delectus libero perspiciatis tempore, doloremque in ex aspernatur
+    accusantium vero tempora ipsam, ab et. Ipsum alias, vitae ullam nisi ad aliquam.</p>
+<p class="bg-slate-600 text-lg text-white max-w-md  md:max-w-full ">Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Magnam temporibus velit asperiores aliquid incidunt accusantium nulla magni maxime. Unde ab
+    rem dolorum vel quasi, officiis facilis cupiditate id et voluptate!</p>
+
+<p class="  bg-slate-500  " style="min-width:fit-content;background: red;">hello me aa waoshdiow</p>
+<p class="max-w-fit bg-yellow-300">this is max tent</p>
+<p class="bg-gray-300 text-md w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error nam ipsa
+    at dolore nobis ducimus enim
+    perferendis! Tenetur sit quos eaque? Provident suscipit laudantium eius, cupiditate similique ex soluta.</p>
+<p class="bg-yellow-300 text-md w-1/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam error nam
+    ipsa at dolore nobis ducimus enim
+    perferendis! Tenetur sit quos eaque? Provident suscipit laudantium eius, cupiditate similique ex soluta.</p>
+<div class="w-full  faizan bg-gradient-to-r from-red-500 bg-gradient-stop-40  to-yellow-500 via-purple-200 "></div>
+
+<div class="bg-red-400  ">as;j;o </div>
+
+<div class="bg-opacity-100 bg-fixed bg-clip-content  border-red-600 border-solid"
+    style=" background-image: url('./default.jpg') ;">
+    <h1 class="bg-red-600 underline">the text is underline</h1>
+
+    <h1 class="text-sm">text no underline</h1>
+    <h1 class="overline">this over line</h1>
+    <h1 class="line-through">this is </h1>
+    <h1 class="decoration-red-800 line-through line decoration-solid  decoration-2 ">this is the color of decoration
+    </h1>
+    <h1 class="underline decoration-red-500 decoration-solid decoration-2 ">without offest</h1>
+    <h1 class="underline decoration-red-500 decoration-solid decoration-2 underline-offset-8">without offest</h1>
+    <h1 class="uppercase">upper case</h1>
+    <h1 class="lowercase hover:uppercase">lower case</h1>
+    <h1 class="capitalize ">capatilaize</h1>
+
+    <h1>overflow hidden with css</h1>
+
+
+
+    <h1>overfolow hidden tailwind css</h1>
+    <p class="w-52  my-4 bg-purple-600 text-xs truncate hover:text-clip h-36">Lorem ipsum dolor sit amet
+        consectetur, adipisicing
+        elit.
+        Pariatur
+        illo laborum debitis magnam molestiae, eveniet eius, consequatur molestias accusamus cumque tempore ex
+        minima
+        sequi fugit id optio fugiat porro architecto? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Velit
+        maxime maiores ex debitis illo nostrum delectus! Mollitia beatae libero rerum, totam fugit porro fuga et
+        ullam
+        provident, ratione ducimus rem.</p>
+
+
+    <p class="indent-1 hover:indent-8">this is indent text</p>
+
+
+
+    <div class="h-40 bg-red-400 w-32">
+        <p class="align-middle">vertical aligment </p>
+
+    </div>
+    <div style="height: 200px; width: 300px; border: 1px solid black;">
+
+        weiohfiweohiowehiohwioh <span class="align-baseline">hii faizan</span>
+    </div>
+
+    <div class="bg-red-400 bg-ye ">
+        In this paragraph, the blue span <span class=" text-yellow-600 align-text-top"> vertical aligment</span>
+        change
+        the
+        vertical-align value
+    </div>
+
+    <p class="whitespace-normal">this is swhite space normal </p>
+    <p class="whitespace-pre">this is white space
+        pre </p>
+    <P class="whitespace-pre-line">THIS is white space wepharfwepo weposf wepo
+
+
+        wesf
+        jpweojf
+        waejpofjowe
+
+    </P>
+    <p class="whitespace-pre-wrap">ioashdwqioa aosidyh wasdhwoias dhcw
+
+
+        awhodic
+        qwapdohqw
+
+        qwa0jd
+    </p>
+
+    <div class="whitespace-pre-wrap ...">Hey everyone!
+
+        It's almost 2022 and we still don't know if there is aliens living among us, or do we? Maybe the person
+        writing
+        this is an alien.
+
+        You will never know.</div>
+
+    <p class="whitespace-pre-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatibus dolore
+        iusto fuga? Recusandae aut voluptatum saepe, incidunt architecto necessitatibus perspiciatis quisquam
+        voluptas
+        neque! Quis mollitia voluptatum et hic itaque.</p>
+
+
+    <p class="break-keep bg-red-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione
+        placeat
+        hic voluptatemklbiohiohlkhiohiohioh impedit inventore omnis suscipit consequuntur. Quibusdam earum
+        laboriosam
+        quos ipsa sit enim blanditiis delectus dolorem. Cupiditate, sint.</p>
+</div> -->
+</body>
+
+</html>

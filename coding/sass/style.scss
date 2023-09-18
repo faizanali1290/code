@@ -1,0 +1,87 @@
+// @import "./header";
+// sass mixin
+
+@mixin comman {
+  color: yellow;
+  font-size: 25px;
+  background-color: aqua;
+}
+
+@mixin border($value: 30px) //here 30 is default value
+ {
+  color: $value;
+}
+.h1 {
+  @include comman;
+  @include border(red);
+}
+// entend
+
+.para {
+  color: red;
+  background-color: yellow;
+  font-size: 20px;
+  border-radius: 30px;
+}
+// if we wan to used the para class with other class then we used extend keyword
+
+.exte {
+  @extend .para;
+}
+// place holder
+
+%abx {
+  background-color: rgb(0, 0, 0);
+  color: rgb(226, 226, 226);
+  font-weight: bold;
+}
+
+.placeholder {
+  @extend %abx;
+}
+//interpolation
+
+@mixin margin($position, $value) {
+  background-color: yellow;
+  color: aqua;
+  font-size: 20px;
+  margin-#{$position}: $value;
+}
+
+.interpolation {
+  @include margin(left, 20px);
+}
+// function
+
+@function width($value) {
+  @return $value/3;
+}
+
+.funWdith {
+  width: width(100vw);
+  background-color: gray;
+}
+// @import "./colorfun.scss";
+// @import "list.scss";
+// @import "./map";
+// @import "./introspection";
+
+
+
+$var: 10px;
+.introspection {
+  padding: variable-exists(var);
+  padding:global-variable-exists(var);
+  padding:function-exists(width);
+  padding:mixin-exists(oj);
+  padding:type-of(var)
+  ;
+  padding: inspect(widthsaiohcqwioh);
+  // padding: $var;
+}
+// @import "./content";
+// @import "./rootandMedia";
+// @import "./if";
+// @import "./for";
+// @import "./each";
+@import "./whiel";

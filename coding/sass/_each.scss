@@ -1,0 +1,31 @@
+$list: ("1px", "2px", "3px");
+
+@each $i in $list {
+  ul {
+    padding: $i;
+  }
+}
+
+// multiple list
+
+@each $one, $two in (("normal", "bold"), (20px, 50px)) {
+  nav {
+    padding: $one;
+    font-weight: $two;
+  }
+}
+
+$map: (
+  weight: normal,
+  padding: 3px,
+);
+
+@each $ones, $twos in $map {
+  .map {
+
+    padding: $ones;
+
+  }
+  
+}
+

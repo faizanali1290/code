@@ -1,0 +1,20 @@
+$var: 1;
+@for $var from 1 to 4 {
+  .a {
+    background-color: red;
+    padding: $var;
+  }
+}
+
+// second
+$var1: 1;
+@for $var1 from 1 through 4 {
+  #{".boxe" + $var1} {
+    background-color: red;
+    width: $var1 * 30px;
+    
+    &:hover {
+      background-color: darken(red, $var1 * 10%);
+    }
+  }
+}

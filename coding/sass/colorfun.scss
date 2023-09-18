@@ -1,0 +1,23 @@
+.dark {
+  background-color: red;
+}
+.dark:hover {
+  background-color: darken(red, 20);
+}
+.lighten{
+    background-color: gray;
+}.lighten:hover{
+    background-color: lighten(gray,5);
+}
+.staturate{
+    background-color: rgb(233, 233, 34);
+}
+.staturate:hover{
+    background-color: saturate(yellow, 100);
+}
+.dstaturate{
+    background-color: rgb(0, 255, 255);
+}
+.dstaturate:hover{
+    background-color: desaturate(aqua, 40)
+}

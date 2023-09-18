@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('./heaven-g6963ef403_1920.jpg'); */
+    background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+}
+.parent{
+    background-color: red;
+    width: 30%;
+    height:50vh;
+}
+img{
+    width: 20px;
+}

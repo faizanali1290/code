@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgba(46, 47, 58, 0.726);
+        }
+
+        Ul {
+            display: flex;
+            /* background-color: red; */
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        li {
+            display: grid;
+            place-items: center;
+            list-style: none;
+            margin: 0px 33px;
+            width: 150px;
+            height: 100px;
+            position: relative;
+            color: yellow;
+            font-size: 2rem;
+            text-transform: capitalize;
+         
+
+        }
+
+        li::before {
+            content: "";
+            display: grid;
+            place-items: center;
+            list-style: none;
+            margin: 0px 33px;
+            width: 113%;
+            height: 115%;
+            /* background-color: rgb(255, 170, 0); */
+            top: -10%;
+            left: -30%;
+            position: absolute;
+            border-top: 4px solid rgb(149, 159, 54);
+            border-left: 4px solid rgb(214, 230, 96);
+            overflow: hidden;
+
+            /* top:-33px */
+        }
+
+        li::after {
+            content: "";
+            display: grid;
+            place-items: center;
+            list-style: none;
+            margin: 0px 33px;
+            width: 113%;
+            height: 115%;
+            bottom: -10%;
+            right: -30%;
+            position: absolute;
+            border-bottom: 4px solid rgb(225, 204, 48);
+            border-right: 4px solid rgb(200, 197, 85);
+        }
+        li:hover::before, li:hover::after{
+            transition: all .5s;
+            transform-origin: left;
+            width: 10%;
+            height: 10%;
+            transform: rotate(360deg);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+warn:  CreateDXGIFactory2: Ignoring flags
+info:  Game: Photoshop.exe
+info:  DXVK: v2.1
+info:  Built-in extension providers:
+info:    Win32 WSI
+info:    OpenVR
+info:    OpenXR
+info:  OpenVR: could not open registry key, status 2
+info:  OpenVR: Failed to locate module
+info:  Vulkan: Found vkGetInstanceProcAddr in winevulkan.dll @ 0x15e840f0

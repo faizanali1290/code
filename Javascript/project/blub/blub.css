@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* height: 100vh;
+    display: grid;
+    place-items: center; */
+}
+.off{
+    position: absolute;
+    transform: translateX(-50%);
+    transform: translatey(-50%);
+    top: 40%;
+    left: 50%;
+
+   
+
+}
+
+.on{
+    
+    position: absolute;
+   
+    top: 40%;
+    left: 50%;
+  transform: translatey(-50%);
+}
+.on1{
+    z-index: 88;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+  transform: translatey(-50%);
+    top: 70%;
+    left: 50%
+}
+button:hover{
+    background-color: yellow;
+    transition: all .5s;
+}

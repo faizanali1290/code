@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+   /*     let xhml=new XMLHttpRequest
+       xhml.open('GEt','./faizan',true)
+       xhml.onreadystatechange=function (){
+      if(this.status==200&&this.readyState==4){
+        let z=this.responseText;
+        console.log(z)
+      }
+       }
+    xhml.onload=function (){
+
+        let z=this.responseText
+         console.log(z)
+    }
+       xhml.send() */
+
+
+
+var url = "http://colormind.io/api/";
+var data = {
+	model : "default",
+	input : [[44,43,44],[90,83,82],"N","N","N"]
+}
+
+var http = new XMLHttpRequest();
+
+http.onreadystatechange = function() {
+	if(http.readyState == 4 && http.status == 200) {
+		var palette = JSON.parse(http.responseText).result;
+	}
+}
+
+http.open("POST", url, true);
+http.send(JSON.stringify(data));
+
+
+
+
+
+    </script>
+</body>
+</html>

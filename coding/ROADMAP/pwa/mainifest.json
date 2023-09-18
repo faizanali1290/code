@@ -1,0 +1,38 @@
+{
+  "name": "faizan",
+  "short_name": "ali",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "red",
+  "theme_color": "yellow",
+  "icons": [
+    {
+      "src": "/icon/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon/apple-touch-icon.png",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon/android-chrome-512x512.png",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "splash": {
+    "image": "/icon/android-chrome-512x512.png",
+    "background_color": "#ffffff",
+    "resize_mode": "cover"
+  },
+  "scope": "/",
+  "lang": "en",
+  "manifest_version": 2,
+  "serviceWorker": {
+    "src": "/pwa/main.js",
+    "scope": "/"
+  }
+}

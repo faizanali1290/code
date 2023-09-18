@@ -1,0 +1,41 @@
+nav {
+  @at-root {
+    ul li {
+      background-color: red;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .log{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+// media
+
+
+.media{
+    background-color: red;
+
+    @media screen and (min-width:1000px) {
+        background-color: darkorchid;
+        
+    }
+    @media screen and (min-width:800px) {
+        background-color: rgb(30, 25, 32);
+        
+    }
+    @media screen and (min-width:600px) {
+        background-color: rgb(18, 93, 95);
+        
+    }
+    @media screen and (max-width:600px) {
+        background-color: rgb(95, 94, 18);
+        
+    }
+
+}

@@ -1,0 +1,39 @@
+restoperatot spread opreator
+regular expression
+
+
+
+asynchrounous programing
+
+agr ham i kam kiya ha to us ka sat dosara kame be karsakty ha
+ it does't depend upper code
+
+synchronous
+
+jab tak 1 kam nhi hota dosara kam nhi chalta
+synchrous depend uper code
+
+
+
+call stack
+
+
+golabal exection context
+
+call stuck and memory heap
+
+memory heap ma jo be program varaible all variable can store in memory heap
+
+
+call track the exction kha pa ha 
+call stuck work as lifo
+push and pop 
+
+
+The Javascript global scope is the context where everything in a Javascript program executes by default. This scope includes all variables, objects, and references
+
+A callback queue is a queue of tasks that are executed after the current task.
+
+
+
+acychronous mean if we have one work then another work

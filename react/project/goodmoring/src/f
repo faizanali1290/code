@@ -1,0 +1,31 @@
+// import logo from './logo.svg';
+// import './App.css';
+// import React,{useState} from 'react';
+
+// function App() {
+
+//   const [state,upstate]=(false)
+
+//   function toogle(){
+
+//     // upstate(cur => {
+//     //   !cur
+//     // })
+
+    
+
+
+//   }
+//   return (
+ 
+
+//     <>
+// <p>{state}</p>
+
+// <button onClick={toogle}>click me</button>
+
+//     </>
+//   );
+// }
+
+// export default App;

@@ -1,0 +1,22 @@
+ul {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.781);
+  height: 100px;
+  line-height: 100px;
+}
+
+li {
+  width: 100px;
+  list-style: none;
+  font-size: 17px;
+
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: rgba(161, 70, 70, 0.521);
+}

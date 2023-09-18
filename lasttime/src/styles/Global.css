@@ -1,0 +1,254 @@
+.wrapper {
+  width: 540px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-image: url("../../public/assest/images/bgImage.jpeg");
+  overflow: hidden;
+  background-size: 560px auto;
+  background-repeat: repeat-y;
+}
+
+/* logo */
+
+.divider {
+  z-index: -1;
+  position: absolute;
+  margin-top: -100px;
+  width: 100%;
+  height: 200px;
+  padding: 10px 30px;
+  background-image: url("../../public/assest/images/bgImage.jpeg");
+  background-repeat: no-repeat;
+  background-size: 560px auto;
+}
+.divider::before {
+  content: " ";
+  position: absolute;
+  z-index: 9;
+  height: 200px;
+  width: 100%;
+  left: 0;
+  background-color: #0000007a;
+}
+
+/* curve */
+.top-curve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #283618;
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bottom-curve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* naviagtion items */
+.Navigation {
+  width: 540px;
+  height: 80px;
+  background-color: rgb(205, 205, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Navigation-container {
+  box-shadow: 3px 1px 10px rgb(0 0 0);
+  background-color: #303030;
+  padding: 3px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  position: relative;
+}
+.navigation-item {
+  font-size: 16px;
+  padding: 3px 8px;
+  height: 30px;
+}
+.info {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+.cart {
+  width: 30px;
+  height: 30px;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: lighten;
+}
+
+#navigation {
+  position: fixed;
+  z-index: 9809809809;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navigation-bar {
+  position: fixed;
+  left: 50%;
+  top: calc(100vh - 80px) !important;
+
+  transform: translateX(-50%);
+}
+/* card */
+.card-wrapper {
+  background: #ffffff;
+  padding-bottom: 20px;
+}
+.card-container {
+  position: relative;
+}
+
+.margin-top {
+  margin-top: 160px;
+  padding-bottom: 100px;
+}
+
+/* Your fixed element CSS */
+
+.slide-content {
+  position: relative;
+}
+
+.Navigation-container img:hover,
+.story-icon img:hover,
+.logo1:hover,
+.logo:hover,
+.cocok-icon:hover {
+  cursor: pointer !important;
+}
+
+.home-icon {
+  color: white;
+  width: 28px;
+  height: 28px;
+}
+.cocok-icon {
+  font-size: 30px;
+}
+.drink {
+  width: 29px;
+  height: 28px;
+  object-fit: cover;
+}
+.swiper-button-next {
+  display: none !important;
+}
+
+.block-slide {
+  z-index: 78;
+  display: block !;
+}
+.none-slide {
+  display: none;
+  z-index: -4;
+}
+
+.topbar-story {
+  margin-top: -55px;
+  margin-left: -40px;
+}
+
+/* logo */
+
+.margin-top {
+  margin-top: 160px;
+  padding-bottom: 100px;
+}
+
+.topbar-story {
+  margin-left: -40px;
+}
+
+.top-bar {
+  width: 540px;
+  margin: auto;
+  position: fixed;
+  z-index: 0909090909 !important;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 160px;
+  top: 0;
+  background-image: url("../../public/assest/images/bgImage.jpeg");
+  background-repeat: no-repeat;
+  background-size: 540px auto;
+}
+.logo {
+  width: 200px;
+  object-fit: contain;
+  position: relative;
+  top: 20px;
+  left: 40px;
+  cursor: pointer !important;
+  z-index: 10;
+}
+@media screen and (max-width: 550px) {
+  .wrapper {
+    width: 100%;
+  }
+  .Navigation {
+    width: 99.9vw;
+  }
+  .bg-image {
+    background-size: 100% auto;
+  }
+  .top-bar {
+    background-size: 100% auto;
+    width: 100%;
+  }
+  .logo {
+    left: 5vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navigation-bar {
+    top: calc(100vh - 136px) !important;
+  }
+  .top-bar {
+    background-color: red;
+    height: 140px;
+  }
+  .logo {
+    top: 10px;
+  }
+  .story-icon-container {
+    margin-top: 49px;
+  }
+  .margin-top {
+    margin-top: 140px;
+  }
+}

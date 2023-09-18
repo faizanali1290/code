@@ -1,0 +1,140 @@
+.story-icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 90px !;
+  height: 90px;
+  margin-top: 64px;
+}
+
+.Story-rounded {
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+}
+.Story-image {
+  object-fit: cover;
+}
+.story-wrapper {
+  padding: 10px 5px;
+  gap: 13px;
+  padding-top: 14px;
+  margin-top: 30px;
+  position: relative;
+}
+.story-card {
+  position: relative;
+  z-index: 23090923309089238989323898989 !important;
+}
+
+.story-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.story-card-heading {
+  display: flex;
+  align-items: center;
+  background: #242222;
+  width: 100%;
+  gap: 14px;
+  padding: 14px 10px;
+}
+
+.story-card-heading img {
+  margin-left: 13px;
+}
+.story-card-img {
+  width: 100.7%;
+  z-index: 90;
+  object-fit: cover;
+  height: 94vh;
+  margin-top: -10px;
+  margin-left: -3px;
+}
+
+.story-swiper {
+  z-index: 098098099;
+  margin-top: 500px;
+  margin: auto;
+}
+
+.slider-story {
+  font-size: 4rem;
+  position: absolute;
+  position: fixed;
+  width: 543px;
+  z-index: 923809809;
+  height: 100vh;
+  left: -3px;
+  top: 2px;
+}
+
+.story-icon-container img {
+  cursor: pointer;
+}
+
+.next-buttonp {
+  right: -3px;
+}
+
+.prev-buttonp,
+.next-buttonp {
+  border: 2px solid #287ec560;
+  background-color: #2983cca8;
+  width: 100px;
+  top: 52px;
+  height: 92vh;
+  z-index: 2897897;
+  position: absolute;
+  transform: skewY(3deg);
+}
+.prev-buttonp {
+  left: 0;
+}
+
+.story-card-heading img {
+  width: 35px;
+  height: 35px;
+}
+
+.story-image-icon h2 {
+  font-size: 13px !important;
+}
+
+.custom-pagination-wrapper {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 540px auto;
+  z-index: 1;
+}
+@media screen and (max-width: 540px) {
+  .slider-story {
+    width: 100%;
+  }
+
+  .story-icon-container img {
+    width: 70px;
+    height: 70px;
+  }
+  .custom-pagination-wrapper {
+    width: 100%;
+  }
+  .story-icon-container {
+    gap: 5vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .story-icon-container {
+    gap: 4vw;
+  }
+}

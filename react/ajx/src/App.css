@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  background-color: red;
+  list-style: none;
+  color: white;
+  height: 70px;
+
+
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+li {
+  text-transform: capitalize;
+}
+
+body {
+  background-color: yellow;
+}
+
+h1 {
+  width: 300px;
+
+/* margin-left: 2000px
+; */
+
+position: relative;
+margin: 70% auto;
+ 
+}
+
+@media screen and (max-width:600px) {
+  h1{
+          font-size: 30px;
+          /* margin: auto; */
+      }
+
+  
+}

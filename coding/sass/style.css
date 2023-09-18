@@ -1,0 +1,90 @@
+.h1 {
+  color: yellow;
+  font-size: 25px;
+  background-color: aqua;
+  color: red;
+}
+
+.para, .exte {
+  color: red;
+  background-color: yellow;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.placeholder {
+  background-color: rgb(0, 0, 0);
+  color: rgb(226, 226, 226);
+  font-weight: bold;
+}
+
+.interpolation {
+  background-color: yellow;
+  color: aqua;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.funWdith {
+  width: 33.3333333333vw;
+  background-color: gray;
+}
+
+.introspection {
+  padding: true;
+  padding: true;
+  padding: true;
+  padding: false;
+  padding: string;
+  padding: widthsaiohcqwioh;
+}
+
+ul {
+  background-color: green;
+}
+
+ul {
+  padding: 10;
+}
+
+ul {
+  padding: 11;
+}
+
+ul {
+  padding: 12;
+}
+
+ul {
+  padding: 13;
+}
+
+ul {
+  padding: 14;
+}
+
+ul {
+  padding: 15;
+}
+
+ul {
+  padding: 16;
+}
+
+ul {
+  padding: 17;
+}
+
+ul {
+  padding: 18;
+}
+
+ul {
+  padding: 19;
+}
+
+.whie {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

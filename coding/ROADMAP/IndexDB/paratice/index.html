@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        input {
+            height: 50px;
+            margin: 9px 0;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        ul {
+            background-color: red;
+            width: 500px;
+            display: flex;
+            gap: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li {
+            color: antiquewhite;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        #remove,
+        #edit {
+
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            border: 3px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 12px;
+        }
+
+        #indexDB-data {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="myForm" action="">
+        <input type="text" id="fullName" placeholder="full name">
+        <input type="email" id="email">
+        <input type="password" id="password">
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- <button onclick="getData()">getData</button> -->
+    <div id="indexDB-data">
+      
+
+    </div>
+
+    <!-- <script src="./indexDB.js"></script> -->
+    <script src="./debug.js"></script>
+
+</body>
+
+</html>

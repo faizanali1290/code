@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Socket.io Test</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script> -->
+  </head>
+  <body>
+    <h1>hello word
+      faizan a
+    </h1>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+    
+  var socket = io();
+
+    // Emit the 'user_live' event with a user object
+    const user = {
+      id: 1,
+      name: 'John',
+      age: 25
+    };
+    socket.emit('user_live', user);
+    socket.emit('connection', 1);
+    socket.on('vister', () => {
+      return 90
+});
+
+socket.on('connectedUsers', (count) => {
+  console.log('Number of connected users:', count);
+});
+</script>
+  </body>
+</html>
